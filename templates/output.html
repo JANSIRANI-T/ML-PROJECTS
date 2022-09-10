@@ -1,0 +1,53 @@
+<html>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0
+  ,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&displa
+  y=swap" rel="stylesheet">
+  
+</head> 
+
+<style> 
+h3 {
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+button {
+padding: 14px 40px;
+background-color: white;
+  color: black;
+  border: 2px solid #4CAF50; /* Green */
+  }
+</style>
+
+
+<body>
+      
+        
+<!-- Main input for receiving Quary for our ML -->
+<form action= "/y_predict" method="post">
+    
+<h3> Hotel Occupancy Prediction System </h3>
+
+<p>  Temperature            <input type="number" step="any" name="Temperature" placeholder="eg: 21.76" required="required" /></p>
+
+<p>  Humidity            <input type="number" step="any" name="Humidity" placeholder="eg: 31.333" required="required" /></p>
+
+<p>  Light            <input type="number" step="any" name="Light" placeholder="eg: 437.33" required="required" /></p>
+
+<p>  CO2            <input type="number" step="any" name="CO2" placeholder="eg: 1029.666667" required="required" /></p>
+      
+<p>  HumidityRatio  <input type="number" step="any" name="HumidityRatio" placeholder="eg: 0.005021011" required="required" /></p>
+
+
+
+<a style= "padding-left:45%"> <button type="submit">Lets Predict</button></a>           
+</form>
+              
+<p> <b> {{prediction_test}} </b> </p>
+</body>
+</html>
+          
+          
